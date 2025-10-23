@@ -6,17 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    <h1> heading level 1 </h1>
-    <h2> heading level 2 </h2>
-    <h3> heading level 3 </h3>
-    <h4> heading level 4 </h4>
-    <h5> heading level 5 </h5>
-    <h6> heading level 6 </h6>
-    <p> Esto es un párrafo </p>
-    <a href="https://www.google.com" target="_blank"> Google </a>
-    <ol>
-        <il> lista 1 </il>
-        <il> lista 2 </il>
-    </ol>
+    {%for row in rows%}
+<div>
+    <h2>id{{row.id}}</h2>
+    <p>nombre{{row.name}}</p>
+    <h3>valor{{row.values}}</h3>
+</div>
+{%endfor%}
+
 </body>
-</html> 
+</html>
